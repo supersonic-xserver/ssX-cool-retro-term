@@ -1,5 +1,6 @@
 QT += qml quick widgets sql quickcontrols2
-TARGET = cool-retro-term
+CONFIG += qt6
+TARGET = ssX-cool-retro-term
 APP_VERSION = $$system(git -C $$PWD/.. describe --tags --always --dirty=-dirty)
 isEmpty(APP_VERSION): APP_VERSION = "unknown"
 DEFINES += APP_VERSION=\\\"$$APP_VERSION\\\"
@@ -14,6 +15,12 @@ SOURCES += \
     $$PWD/../KDSingleApplication/src/kdsingleapplication.cpp \
     $$PWD/../KDSingleApplication/src/kdsingleapplication_localsocket.cpp
 DEFINES += KDSINGLEAPPLICATION_STATIC_BUILD
+
+# qmltermwidget linkage
+INCLUDEPATH += $$PWD/../qmltermwidget/lib \
+              $$PWD/../qmltermwidget/src
+DEPENDPATH += $$PWD/../qmltermwidget/QMLTermWidget
+LIBS += -L$$PWD/../qmltermwidget/QMLTermWidget -lqmltermwidget
 
 DESTDIR = $$OUT_PWD/../
 

@@ -17,8 +17,8 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *******************************************************************************/
-import QtQuick 2.2
-import Qt5Compat.GraphicalEffects
+import QtQuick
+import QtQuick.Effects
 
 import "utils.js" as Utils
 
@@ -61,10 +61,12 @@ ShaderTerminal {
         width: parent.width * appSettings.bloomQuality
         height: parent.height * appSettings.bloomQuality
 
-        sourceComponent: FastBlur {
-            radius: Utils.lint(16, 64, appSettings.bloomQuality)
+        sourceComponent: MultiEffect {
+            blurEnabled: true
+            blur: 1.0
+            blurMax: Utils.lint(16, 64, appSettings.bloomQuality)
             source: terminal.mainSource
-            transparentBorder: true
+            autoPaddingEnabled: true
         }
     }
     Loader {
