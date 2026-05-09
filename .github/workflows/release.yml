@@ -48,3 +48,11 @@ jobs:
         with:
           name: ssX-cool-retro-term-appimage
           path: ./release/*
+
+      - name: Publish rolling release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: dirty
+          name: Rolling Release
+          prerelease: true
+          files: ./release/*
