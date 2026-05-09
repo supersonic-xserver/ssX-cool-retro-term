@@ -20,7 +20,7 @@ DEFINES += KDSINGLEAPPLICATION_STATIC_BUILD
 INCLUDEPATH += $$PWD/../qmltermwidget/lib \
               $$PWD/../qmltermwidget/src
 DEPENDPATH += $$PWD/../qmltermwidget/QMLTermWidget
-LIBS += -L$$PWD/../qmltermwidget/QMLTermWidget -lqmltermwidget
+LIBS += -L$$PWD/../qmltermwidget/QMLTermWidget
 
 DESTDIR = $$OUT_PWD/../
 
