@@ -1,12 +1,12 @@
 
 
 /*******************************************************************************
-* Copyright (c) 2013-2021 "Filippo Scognamiglio"
-* https://github.com/Swordfish90/cool-retro-term
+* Copyright (c) 2013-2021 "ssX Team"
+* https://github.com/supersonic-xserver/ssX-cool-retro-term
 *
-* This file is part of cool-retro-term.
+* This file is part of ssX-cool-retro-term.
 *
-* cool-retro-term is free software: you can redistribute it and/or modify
+* ssX-cool-retro-term is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
