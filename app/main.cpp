@@ -65,11 +65,11 @@ int main(int argc, char *argv[])
     if (argc>1 && (!strcmp(argv[1],"-h") || !strcmp(argv[1],"--help"))) {
         QTextStream cout(stdout, QIODevice::WriteOnly);
         cout << "Usage: " << argv[0] << " [--default-settings] [--workdir <dir>] [--program <prog>] [-p|--profile <prof>] [--fullscreen] [-h|--help]" << Qt::endl;
-        cout << "  --default-settings  Run cool-retro-term with the default settings" << Qt::endl;
+        cout << "  --default-settings  Run ssX-cool-retro-term with the default settings" << Qt::endl;
         cout << "  --workdir <dir>     Change working directory to 'dir'" << Qt::endl;
         cout << "  -e <cmd>            Command to execute. This option will catch all following arguments, so use it as the last option." << Qt::endl;
-        cout << "  --fullscreen        Run cool-retro-term in fullscreen." << Qt::endl;
-        cout << "  -p|--profile <prof> Run cool-retro-term with the given profile." << Qt::endl;
+        cout << "  --fullscreen        Run ssX-cool-retro-term in fullscreen." << Qt::endl;
+        cout << "  -p|--profile <prof> Run ssX-cool-retro-term with the given profile." << Qt::endl;
         cout << "  -h|--help           Print this help." << Qt::endl;
         cout << "  --verbose           Print additional information such as profiles and settings." << Qt::endl;
         return 0;
@@ -79,18 +79,18 @@ int main(int argc, char *argv[])
 
     if (argc>1 && (!strcmp(argv[1],"-v") || !strcmp(argv[1],"--version"))) {
         QTextStream cout(stdout, QIODevice::WriteOnly);
-        cout << "cool-retro-term " << appVersion << Qt::endl;
+        cout << "ssX-cool-retro-term " << appVersion << Qt::endl;
         return 0;
     }
 
     QApplication app(argc, argv);
     app.setAttribute(Qt::AA_MacDontSwapCtrlAndMeta, true);
-    app.setApplicationName(QStringLiteral("cool-retro-term"));
-    app.setOrganizationName(QStringLiteral("cool-retro-term"));
-    app.setOrganizationDomain(QStringLiteral("cool-retro-term"));
+    app.setApplicationName(QStringLiteral("ssX-cool-retro-term"));
+    app.setOrganizationName(QStringLiteral("ssX-cool-retro-term"));
+    app.setOrganizationDomain(QStringLiteral("ssX-cool-retro-term"));
     app.setApplicationVersion(appVersion);
 
-    KDSingleApplication singleApp(QStringLiteral("cool-retro-term"));
+    KDSingleApplication singleApp(QStringLiteral("ssX-cool-retro-term"));
 
     if (!singleApp.isPrimaryInstance()) {
         if (singleApp.sendMessage("new-window"))

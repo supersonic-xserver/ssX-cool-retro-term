@@ -1,10 +1,10 @@
 /*******************************************************************************
-* Copyright (c) 2013-2021 "Filippo Scognamiglio"
-* https://github.com/Swordfish90/cool-retro-term
+* Copyright (c) 2013-2021 "ssX Team"
+* https://github.com/supersonic-xserver/ssX-cool-retro-term
 *
-* This file is part of cool-retro-term.
+* This file is part of ssX-cool-retro-term.
 *
-* cool-retro-term is free software: you can redistribute it and/or modify
+* ssX-ssX-cool-retro-term is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either version 3 of the License, or
 * (at your option) any later version.
@@ -34,7 +34,7 @@ ApplicationWindow {
         spacing: 15
         Text {
             Layout.alignment: Qt.AlignHCenter
-            text: "cool-retro-term"
+            text: "ssX-cool-retro-term"
             color: palette.text
             font {
                 bold: true
@@ -101,9 +101,9 @@ ApplicationWindow {
                 horizontalAlignment: Text.AlignHCenter
                 color: palette.text
                 text: appSettings.version + "\n" + qsTr(
-                          "Author: ") + "Filippo Scognamiglio\n" + qsTr(
-                          "Email: ") + "flscogna@gmail.com\n" + qsTr(
-                          "Source: ") + "https://github.com/Swordfish90/cool-retro-term\n"
+                          "Author: ") + "ssX Team\n" + qsTr(
+                          "Telegram: ") + "https://t.me/supersonicxdev\n" + qsTr(
+                          "Source: ") + "https://github.com/supersonic-xserver/ssX-cool-retro-term\n"
             }
         }
     }
@@ -116,9 +116,9 @@ ApplicationWindow {
                 readOnly: true
                 wrapMode: TextEdit.Wrap
                 color: palette.text
-                text: "Copyright (c) 2013-2025 Filippo Scognamiglio <flscogna@gmail.com>\n\n"
-                      + "https://github.com/Swordfish90/cool-retro-term\n\n" +
-                      "cool-retro-term is free software: you can redistribute it and/or modify "
+                text: "Copyright (c) 2013-2025 ssX Team https://t.me/supersonicxdev\n\n"
+                      + "https://github.com/supersonic-xserver/ssX-cool-retro-term\n\n" +
+                      "ssX-cool-retro-term is free software: you can redistribute it and/or modify "
                       + "it under the terms of the GNU General Public License as published by "
                       + "the Free Software Foundation, either version 3 of the License, or "
                       + "(at your option) any later version.\n\n" +

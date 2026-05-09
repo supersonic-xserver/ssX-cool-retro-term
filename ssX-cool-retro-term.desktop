@@ -2,7 +2,7 @@
 Comment=Use the command line the old way
 Exec=ssX-cool-retro-term
 GenericName=Terminal emulator
-Icon=cool-retro-term
+Icon=ssX-cool-retro-term
 Name=ssX Cool Retro Term
 Categories=System;TerminalEmulator;
 StartupNotify=true
