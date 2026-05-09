@@ -24,7 +24,7 @@ mkdir -p "$BUILD_DIR"
 rm -rf "$APPDIR"
 pushd "$BUILD_DIR"
 
-qmake "$REPO_ROOT/cool-retro-term.pro"
+qmake "$REPO_ROOT/ssX-cool-retro-term.pro"
 make -j"$(nproc)"
 
 # Install targets from subprojects (the top-level install only installs the desktop file).
