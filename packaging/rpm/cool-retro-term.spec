@@ -31,29 +31,29 @@ URL:        https://github.com/Swordfish90/cool-retro-term
 # file extension accordingly.
 Source0:    %{name}-%{version}.tar.xz
 
-BuildRequires: pkgconfig(Qt5Core)
-BuildRequires: pkgconfig(Qt5Declarative)
-BuildRequires: pkgconfig(Qt5Gui)
-BuildRequires: pkgconfig(Qt5Quick)
+BuildRequires: pkgconfig(Qt6Core)
+BuildRequires: pkgconfig(Qt6Declarative)
+BuildRequires: pkgconfig(Qt6Gui)
+BuildRequires: pkgconfig(Qt6Quick)
 BuildRequires: desktop-file-utils
 
 # Package names only verified with Fedora and openSUSE.
 # Should the packages in your distro be named dirrerently,
 # see http://en.opensuse.org/openSUSE:Build_Service_cross_distribution_howto
 %if 0%{?fedora}
-Requires:      qt5-qtbase
-Requires:      qt5-qtbase-gui
-Requires:      qt5-qtdeclarative
-Requires:      qt5-qtgraphicaleffects
-Requires:      qt5-qtquickcontrols
+Requires:      qt6-qtbase
+Requires:      qt6-qtbase-gui
+Requires:      qt6-qtdeclarative
+Requires:      qt6-qtgraphicaleffects
+Requires:      qt6-qtquickcontrols
 %endif
 
 %if 0%{?suse_version}
-Requires:      libqt5-qtquickcontrols
-Requires:      libqt5-qtbase
-Requires:      libQt5Gui5
-Requires:      libqt5-qtdeclarative
-Requires:      libqt5-qtgraphicaleffects
+Requires:      libqt6-qtquickcontrols
+Requires:      libqt6-qtbase
+Requires:      libQt6Gui6
+Requires:      libqt6-qtdeclarative
+Requires:      libqt6-qtgraphicaleffects
 %endif
 
 %description
@@ -65,7 +65,7 @@ customizable, and reasonably lightweight.
 %setup -q
 
 %build
-qmake-qt5
+qmake-qt6
 make %{?_smp_mflags}
 
 %install
@@ -80,7 +80,7 @@ desktop-file-install                            \
 %defattr(-,root,root,-)
 %doc gpl-2.0.txt gpl-3.0.txt README.md
 %{_bindir}/%{name}
-%{_libdir}/qt5/qml/
+%{_libdir}/qt6/qml/
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/*/*
 
