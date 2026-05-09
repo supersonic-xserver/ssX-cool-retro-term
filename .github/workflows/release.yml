@@ -36,8 +36,6 @@ jobs:
       - name: Build ssX-cool-retro-term
         run: |
           # Build main app with link to updated libs
-          qmake
-          make -j$(nproc)
           ./scripts/build-appimage.sh
           
       - name: Collect artifact
