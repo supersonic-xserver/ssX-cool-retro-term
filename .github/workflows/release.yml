@@ -33,24 +33,10 @@ jobs:
           setup-python: false
           cache: true
           
-      - name: Build KDSingleApplication (Qt6)
-        run: |
-          cd KDSingleApplication
-          qmake . 
-          make -j$(nproc)
-          sudo make install
-          
-      - name: Build qmltermwidget (Qt6)
-        run: |
-          cd qmltermwidget
-          qmake .
-          make -j$(nproc)
-          sudo make install
-          
       - name: Build ssX-cool-retro-term
         run: |
           # Build main app with link to updated libs
-          qmake .
+          qmake
           make -j$(nproc)
           ./scripts/build-appimage.sh
           
