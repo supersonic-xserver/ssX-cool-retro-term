@@ -72,7 +72,7 @@ export LINUXDEPLOY_EXCLUDED_LIBRARIES="libmysqlclient.so;libqsqlmimer.so;libqsql
 "$LINUXDEPLOY" \
     --appdir "$APPDIR" \
     -e "$APPDIR/usr/bin/ssX-cool-retro-term" \
-    -i "$REPO_ROOT/app/icons/256x256/cool-retro-term.png" \
+    -i "$REPO_ROOT/app/icons/256x256/ssX-cool-retro-term.png" \
     -d "$REPO_ROOT/ssX-cool-retro-term.desktop" \
     --plugin qt \
     --output appimage
